@@ -3,22 +3,15 @@ function version() {
   return "1.5.0";
 }
 
-if (empty($_GET)) {
-  $title = "プシューポートフォリオ - 表示できるコンテンツがありません。";
-  $description = "申し訳なく存じますが、ページが削除されたか、表示できるコンテンツがありません。";
-  $content = "こちらはプシューポートフォリオです。申し訳なく存じますがここには表示できるコンテンツがないので、ナビゲーションから見たいコンテンツを選択してください。";
-  $hiddenPage = "<meta name='robots' content='noindex,nofollow'>";
-}
-
 $pageFile = "./assets/pageData/page.json";
 
 if (file_exists($pageFile)) {
   $page = json_decode(file_get_contents($pageFile), true);
-  // メインメニュー項目を取得
   $mainMenuItems = array();
+  $p_pram_result_check = false; // foreach内ではeles等の再代入動作はバグるのでフラグを使用。
   foreach ($page["mainPages"] as $mainPage) {
     $mainMenuItems[] = $mainPage["type"];
-  
+
     if ($_GET["p"] == $mainPage["type"]) {
       $title = $mainPage["title"];
       $description = $mainPage["description"];
@@ -57,10 +50,19 @@ if (file_exists($pageFile)) {
           }
         }
       }
+      
+      $p_pram_result_check = true;
     }
   }
 } else {
   echo "内部エラー：システムファイルの破損またはファイル存在しない為、情報が見つかりません。そのことを<a href='https://21emon.wjg.jp/contact_form/contact.php'>開発者に報告</a>してください。";
+}
+
+if (empty($_GET) || $p_pram_result_check == false) {
+  $title = "プシューポートフォリオ - 表示できるコンテンツがありません。";
+  $description = "申し訳なく存じますが、ページが削除されたか、表示できるコンテンツがありません。";
+  $content = "こちらはプシューポートフォリオです。申し訳なく存じますがここには表示できるコンテンツがないので、ナビゲーションから見たいコンテンツを選択してください。";
+  $hiddenPage = "<meta name='robots' content='noindex,nofollow'>";
 }
 
 function generateMainMenu($menuItems) {
