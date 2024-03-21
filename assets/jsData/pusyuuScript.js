@@ -1,6 +1,6 @@
 /*****************************************
   *----------------------------------
-  |  ThisCssVersion: 1.18.0       |
+  |  ThisCssVersion: 1.18.1       |
   |  © 2021-2024 By PusyuuWanko/  |
   |  LastUpdate: 2023-12-31       |
   |  License: MITLicense          |
@@ -522,22 +522,25 @@ setTimeout(imageModal, 1000);
 ---------------------------------*/
 
 window.addEventListener("DOMContentLoaded", function() {
- var observedEle = [...document.querySelectorAll("section")];
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = "1";
-        entry.target.style.transform = "translateY(0px)";
-      } else {
-        entry.target.style.opacity = "0";
-        entry.target.style.transform = "translateY(10px)";
-      }
+  var imgEle = [...document.querySelectorAll("main img")];
+  if (imgEle.length < 1) { //画像があるところではオブザーバーがバグるので画像が無いときのみ発動させる。
+    var observedEle = [...document.querySelectorAll("section")];
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateY(0px)";
+        } else {
+          entry.target.style.opacity = "0";
+          entry.target.style.transform = "translateY(10px)";
+        }
+      });
+    }, { threshold: 0.5 });
+    observedEle.forEach(function(item, index) {
+      item.style.opacity = "0";
+      item.style.transform = "translateY(10px)";
+      item.style.transition = "all 0.5s";
+      observer.observe(item);
     });
-  }, { threshold: 0.5 });
-  observedEle.forEach(function(item, index) {
-    item.style.opacity = "0";
-    item.style.transform = "translateY(10px)";
-    item.style.transition = "all 0.5s";
-    observer.observe(item);
-  });
+  }
 });

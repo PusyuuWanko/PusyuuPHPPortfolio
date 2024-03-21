@@ -228,7 +228,7 @@ function generateMainMenu($menuItems) {
     <footer class="footer center">
       <div class="column normal-box">
         <h3>サイト概要</h3>
-        <p>このサイトはプシューという人のポートフォリオと名乗ってる場所です。</p>
+        <p>このサイトはプシューという人がPHPポートフォリオと名乗ってる場所です。</p>
         <div class="img-frame">
           <div class="img-01" style="background-image: url('./assets/imageData/1.jpg');"></div>
           <div class="img-02" style="background-image: url('./assets/imageData/2.jpg');"></div>
