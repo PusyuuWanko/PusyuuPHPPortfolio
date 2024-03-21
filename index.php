@@ -1,6 +1,6 @@
 <?php
 function version() {
-  return "1.5.0";
+  return "1.5.1";
 }
 
 $pageFile = "./assets/pageData/page.json";
@@ -61,7 +61,7 @@ if (file_exists($pageFile)) {
 if (empty($_GET) || $p_pram_result_check == false) {
   $title = "プシューポートフォリオ - 表示できるコンテンツがありません。";
   $description = "申し訳なく存じますが、ページが削除されたか、表示できるコンテンツがありません。";
-  $content = "こちらはプシューポートフォリオです。申し訳なく存じますがここには表示できるコンテンツがないので、ナビゲーションから見たいコンテンツを選択してください。";
+  $content = "こちらはプシューポートフォリオです。申し訳なく存じますが、ページが削除されたか表示できるコンテンツが無いので、ナビゲーションから見たいコンテンツを選択してください。";
   $hiddenPage = "<meta name='robots' content='noindex,nofollow'>";
 }
 
