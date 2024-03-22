@@ -1,8 +1,8 @@
 /*****************************************
   *----------------------------------
-  |  ThisCssVersion: 1.18.1       |
+  |  ThisCssVersion: 1.18.2       |
   |  © 2021-2024 By PusyuuWanko/  |
-  |  LastUpdate: 2024-03-21       |
+  |  LastUpdate: 2024-03-22       |
   |  License: MITLicense          |
   |  PusyuuPortfolio(^v^)/        |
 ----------------------------------*
@@ -535,7 +535,7 @@ window.addEventListener("DOMContentLoaded", function() {
           entry.target.style.transform = "translateY(10px)";
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.2 });
     observedEle.forEach(function(item, index) {
       item.style.opacity = "0";
       item.style.transform = "translateY(10px)";
