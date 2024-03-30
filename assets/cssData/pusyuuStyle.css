@@ -602,22 +602,22 @@ td {
 }
 
 .show > #imageSlide > #img-01 {
-  background-image: url('https://21emon.wjg.jp/PusyuuPage/ImageData/kyouno_pusyuu/7.jpg');
+  background-image: url('https://pusyuuwanko.com/PusyuuPage/ImageData/kyouno_pusyuu/7.jpg');
   animation: show-slide-anime-01 24s infinite;
 }
 
 .show > #imageSlide > #img-02 {
-  background-image: url('https://21emon.wjg.jp/PusyuuPage/ImageData/kyouno_pusyuu/2.jpg');
+  background-image: url('https://pusyuuwanko.com/PusyuuPage/ImageData/kyouno_pusyuu/2.jpg');
   animation: show-slide-anime-02 24s infinite;
 }
 
 .show > #imageSlide > #img-03 {
-  background-image: url('https://21emon.wjg.jp/PusyuuPage/ImageData/kyouno_pusyuu/8.jpg');
+  background-image: url('https://pusyuuwanko.com/PusyuuPage/ImageData/kyouno_pusyuu/8.jpg');
   animation: show-slide-anime-03 24s infinite;
 }
 
 .show > #imageSlide > #img-04 {
-  background-image: url('https://21emon.wjg.jp/PusyuuPage/ImageData/kyouno_pusyuu/10.png');
+  background-image: url('https://pusyuuwanko.com/PusyuuPage/ImageData/kyouno_pusyuu/10.png');
   animation: show-slide-anime-02 24s infinite;
 }
 

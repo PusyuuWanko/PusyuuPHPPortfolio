@@ -55,7 +55,7 @@ if (file_exists($pageFile)) {
     }
   }
 } else {
-  echo "内部エラー：システムファイルの破損またはファイル存在しない為、情報が見つかりません。そのことを<a href='https://21emon.wjg.jp/contact_form/contact.php'>開発者に報告</a>してください。";
+  echo "内部エラー：システムファイルの破損またはファイル存在しない為、情報が見つかりません。そのことを<a href='https://pusyuuwanko.com/contact_form/contact.php'>開発者に報告</a>してください。";
 }
 
 if (empty($_GET) || $p_pram_result_check == false) {
@@ -87,7 +87,7 @@ function generateMainMenu($menuItems) {
     <meta name="twitter:description" content="<?php echo $description; ?>">
     <meta name="twitter:image" content="<?php echo $imageSrc; ?>">
     <title><?php echo $title; ?></title>
-    <link rel="shortcut icon" href="https://21emon.wjg.jp/SystemFolder/IconData/favicon.ico">
+    <link rel="shortcut icon" href="https://pusyuuwanko.com/SystemFolder/IconData/favicon.ico">
     <link rel="stylesheet" href="./assets/cssData/pusyuuStyle.css">
     <script rel="javascript" src="./assets/jsData/pusyuuScript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
@@ -123,7 +123,7 @@ function generateMainMenu($menuItems) {
   <body>
     <div id="loading">
       <div class="load_content">
-        <img src="https://21emon.wjg.jp/Profile/pro.jpg" alt="ローディング画像" class="avater_image" style="display: block; box-shadow: 2px 2px 5px #ccc;" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+        <img src="https://pusyuuwanko.com/Profile/pro.jpg" alt="ローディング画像" class="avater_image" style="display: block; box-shadow: 2px 2px 5px #ccc;" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
       </div>
       <div style="margin: 10px;" class="load_content"> みすぼらしい画面消去中。。。少々お待ちください。 </div>
       <div style="margin: 10px;" class="load_content">
@@ -172,7 +172,7 @@ function generateMainMenu($menuItems) {
     </div>
     <header class="header">
       <div class="header_nav">
-        <h1 class="header_logo"><a href="#"><img src="https://21emon.wjg.jp/PusyuuPage/IconData/logo-black.png" alt="ロゴ画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a></h1>
+        <h1 class="header_logo"><a href="#"><img src="https://pusyuuwanko.com/PusyuuPage/IconData/logo-black.png" alt="ロゴ画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></a></h1>
         <a href="#modal_ham_nav" class="modal_menu-btn"></a>
         <div id="modal_ham_nav">
           <div>
@@ -245,20 +245,20 @@ function generateMainMenu($menuItems) {
       </div>
       <div class="column normal-box">
         <h3>その他のプロダクト</h3>
-        <a href="https://21emon.wjg.jp/Profile/?hatatinaritakunai" target="_blank">二十歳にはなりたくないー、そんなプシューの気持ちのサイト</a>
-        <a href="https://21emon.wjg.jp/oldPusyuuPage" target="_blank">古代プシュー</a>
-        <a href="https://21emon.wjg.jp/bbs_of_php" target="_blank">プシューIPS/PusyuuIPS</a>
-        <a href="https://21emon.wjg.jp/Profile" target="_blank">プシューわんこ/プロフィール</a>
-        <a href="https://21emon.wjg.jp/PusyuuAppStore" target="_blank">プシューアプリストア</a>
-        <a href="https://21emon.wjg.jp/koukaon" target="_blank">プシュー効果音</a>
-        <a href="https://21emon.wjg.jp/japan" target="_blank">美しい日本の文化を〜</a>
-        <a href="https://21emon.wjg.jp/PusyuuPage/PageData/p1" target="_blank">プシューページ</a>
-        <a href="https://21emon.wjg.jp" target="_blank">プシューゲートウェイ</a>
+        <a href="https://pusyuuwanko.com/Profile/?hatatinaritakunai" target="_blank">二十歳にはなりたくないー、そんなプシューの気持ちのサイト</a>
+        <a href="https://pusyuuwanko.com/oldPusyuuPage" target="_blank">古代プシュー</a>
+        <a href="https://pusyuuwanko.com/bbs_of_php" target="_blank">プシューIPS/PusyuuIPS</a>
+        <a href="https://pusyuuwanko.com/Profile" target="_blank">プシューわんこ/プロフィール</a>
+        <a href="https://pusyuuwanko.com/PusyuuAppStore" target="_blank">プシューアプリストア</a>
+        <a href="https://pusyuuwanko.com/koukaon" target="_blank">プシュー効果音</a>
+        <a href="https://pusyuuwanko.com/japan" target="_blank">美しい日本の文化を〜</a>
+        <a href="https://pusyuuwanko.com/PusyuuPage/PageData/p1" target="_blank">プシューページ</a>
+        <a href="https://pusyuuwanko.com" target="_blank">プシューゲートウェイ</a>
       </div>
       <div class="column normal-box">
         <h3>規約等</h3>
-        <a href="https://21emon.wjg.jp/TermsAndPrivacypolicy/terms" target="_blank">利用規約</a>
-        <a href="https://21emon.wjg.jp/TermsAndPrivacypolicy/privacypolicy" target="_blank">プライバシーポリシー</a>
+        <a href="https://pusyuuwanko.com/TermsAndPrivacypolicy/terms" target="_blank">利用規約</a>
+        <a href="https://pusyuuwanko.com/TermsAndPrivacypolicy/privacypolicy" target="_blank">プライバシーポリシー</a>
         <small>© 2020-2024 Created By PusyuuWanko/</small>
       </div>
     </footer>
